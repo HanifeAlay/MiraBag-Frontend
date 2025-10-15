@@ -258,20 +258,20 @@ li {
 }
 
 /* Ürün Detayı Sayfası Düzenlemeleri */
-.zoom {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    border-radius: 8px;
-    cursor: crosshair;
+.main-image-frame {
+  overflow: hidden;
+  border-radius: 0.375rem; 
 }
-.zoom img{
-    width: 100%;
-    display: block;
-    pointer-events: none;
-    user-select: none;
+.main-image-frame img {
+  transition: transform 0.4s ease;
 }
-.zoom.active img{
-    opacity: 0;
+.main-image-frame:hover img {
+  transform: scale(1.2);
 }
+.thumbnail {
+  cursor: pointer;
+}
+
+/* Ek Düzenlemeler */
+
 

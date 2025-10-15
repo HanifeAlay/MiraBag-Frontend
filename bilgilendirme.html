@@ -95,13 +95,13 @@
                   Kategoriler
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="bilgilendirme.html">Yeni Gelenler</a></li>
-                  <li><a class="dropdown-item" href="bilgilendirme.html">Çantalarımız</a></li>
+                  <li><a class="dropdown-item" href="#">Yeni Gelenler</a></li>
+                  <li><a class="dropdown-item" href="#">Çantalarımız</a></li>
                   <li>
                     <hr class="dropdown-divider" />
                   </li>
                   <li>
-                    <a class="dropdown-item" href="bilgilendirme.html">Çanta Malzemeleri</a>
+                    <a class="dropdown-item" href="#">Çanta Malzemeleri</a>
                   </li>
                 </ul>
               </li>
@@ -112,59 +112,31 @@
     </nav>
     <!-- NavBar - End -->
     <hr />
-    <!-- Carusel - Start -->
-    <main>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-md-12 metin-colon my-5">
-            <h2><b>Hakkımızda</b></h2>
-            <br />
-          </div>
-        </div>
-      </div>
-      <!-- Carusel - End -->
 
-      <div class="container my-5">
-        <div class="row text-center ">
-          <div class="col-md-6">
-            <img src="photo/hakkımızda-foto.jpg" alt="profil" class="hakkimizda">
-          </div>
-        
-          <div class="col-md-6">
-            <h3><strong>Bir Tutkunun Işıltılı Hikayesi</strong></h3>
-            <p>
-              MiraBag, zarafetin el emeğiyle buluştuğu bir hayalden doğdu. Her
-              şey, bir boncuğun diğerine sabırla eklenmesiyle başlayan, ışıltılı
-              bir tutkunun peşinden gitme cesaretiyle şekillendi. Bizim için
-              gerçek lüks, bir logodan ibaret değil; biricik olanda, bir
-              hikayesi olanda ve dokunulduğunda hissedilen emekte gizlidir.
-              Atölyemize giren her bir inci, her bir kristal, bir potansiyel
-              taşır. Onları bir araya getiren her bir ilmek, saatler süren
-              sabrın ve adanmışlığın bir ifadesidir. Bu yüzden hiçbir MiraBag,
-              bir diğerinin aynısı değildir; her biri, sahibine özel bir sanat
-              eseridir.
-            </p>
-          </div>
-        </div>
-      </div>
+    <main class="container my-5 text-center">
+        <h3><strong>Bilgilendirme Sayfası</strong></h3>
+        <p class="mt-4">
+            Bu sayfa demo amaçlıdır. Kargo, iade, teslimat ve diğer bilgilere <br>
+             ait içerikler burada yer alacaktır.
+        </p>
+        <a href="index.html" class="btn btn-primary mt-4">Ana Sayfaya Dön</a>
     </main>
-
     <!-- Footer - Start -->
     <footer class="footer">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
             <h3 class="fw-bold fs-3">Kategoriler</h3>
-            <a href="bilgilendirme.html"> İnci Çantalar</a><br />
-            <a href="bilgilendirme.html"> Kristal Boncuk Çantalar</a><br />
-            <a href="bilgilendirme.html">Çanta Malzemeleri</a>
+            <a href="#"> İnci Çantalar</a><br />
+            <a href="#"> Kristal Boncuk Çantalar</a><br />
+            <a href="#">Çanta Malzemeleri</a>
           </div>
           <div class="col-md-4">
             <h3 class="fw-bold fs-3">Önemli Bilgiler</h3>
-            <a href="bilgilendirme.html">Kargo ve Teslimat</a><br />
-            <a href="bilgilendirme.html">İade ve Değişim</a><br />
-            <a href="bilgilendirme.html">Satış Sözleşmesi</a><br />
-            <a href="bilgilendirme.html">Gizlilik ve Güvenlik politakası</a>
+            <a href="#">Kargo ve Teslimat</a><br />
+            <a href="#">İade ve Değişim</a><br />
+            <a href="#">Satış Sözleşmesi</a><br />
+            <a href="#">Gizlilik ve Güvenlik politakası</a>
           </div>
           <div class="col-md-4">
             <h3 class="fw-bold fs-3">Hızlı Erişim</h3>
@@ -176,6 +148,35 @@
       </div>
     </footer>
     <!-- Footer - End -->
+
+    <!-- Modal Yapısı -->
+    <div id="modal1" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">MiraBag'e Hoş Geldiniz !</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>Keyifli Alışverişler Dileriz.</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
+              Devam Et
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

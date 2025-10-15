@@ -28,7 +28,7 @@
     <!-- NavBar - Start -->
     <nav class="navbar bg-body-tertiary fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand mx-auto" href="index.html"
+        <a class="navbar-brand mx-sm-auto" href="index.html"
           >MiraBag - Zehra Apak</a
         >
         <form class="d-flex d-none d-lg-flex me-3" role="search">
@@ -95,13 +95,13 @@
                   Kategoriler
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Yeni Gelenler</a></li>
-                  <li><a class="dropdown-item" href="#">Çantalarımız</a></li>
+                  <li><a class="dropdown-item" href="bilgilendirme.html">Yeni Gelenler</a></li>
+                  <li><a class="dropdown-item" href="bilgilendirme.html">Çantalarımız</a></li>
                   <li>
                     <hr class="dropdown-divider" />
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Çanta Malzemeleri</a>
+                    <a class="dropdown-item" href="bilgilendirme.html">Çanta Malzemeleri</a>
                   </li>
                 </ul>
               </li>
@@ -118,21 +118,31 @@
           <div class="col-md-7">
             <div class="row align-items-start">
               <div class="col-md-3">
-                <img src="photo/inci cantalar/Gelin-inci2.png" 
-                     class="img-fluid rounded border mb-3 urun-galerisi-kucuk-resim"
-                     alt="Thumbnail 1">
-                <img src="photo/inci cantalar/gelin-inci3.png" 
-                     class="img-fluid rounded border mb-3 urun-galerisi-kucuk-resim"
-                     alt="Thumbnail 2">
-                     <img src="photo/inci cantalar/gelin-inci1.png" 
-                     class="img-fluid rounded border mb-3 urun-galerisi-kucuk-resim"
-                     alt="Thumbnail 3">
+                <img
+                  src="photo/inci-cantalar/Gelin-inci2.png"
+                  class="img-fluid rounded border mb-3 thumbnail"
+                  alt="Thumbnail 1"
+                />
+                <img
+                  src="photo/inci-cantalar/gelin-inci3.png"
+                  class="img-fluid rounded border mb-3 thumbnail"
+                  alt="Thumbnail 2"
+                />
+                <img
+                  src="photo/inci-cantalar/gelin-inci1.png"
+                  class="img-fluid rounded border mb-3 thumbnail"
+                  alt="Thumbnail 3"
+                />
               </div>
+
               <div class="col-md-9">
-                <div id="buyuk-resim-alani" class="zoom" style="width: 100%;">
-                  <img src="photo/inci cantalar/gelin-inci1.png"
-                    class="img-fluid rounded border mb-3"
-                    alt="buyukFoto">
+                <div class="main-image-frame">
+                  <img
+                    src="photo/inci-cantalar/gelin-inci1.png"
+                    id="mainImage"
+                    class="img-fluid rounded border"
+                    alt="Ana Ürün Resmi"
+                  />
                 </div>
               </div>
             </div>
@@ -155,7 +165,7 @@
               id="ürünAdedi"
               required
             />
-            <a href="#" class="btn btn-primary  my-3">Sepete Ekle</a>
+            <a href="#" class="btn btn-primary my-3">Sepete Ekle</a>
           </div>
         </div>
         <!-- accordion -->
@@ -182,10 +192,13 @@
                   data-bs-parent="#accordionFlushExample"
                 >
                   <div class="accordion-body">
-                    <strong>Malzeme:</strong> Yüksek Kaliteli Parlak İnci, Altın Kaplama Metal
-                    Aksam  <br> <strong>Boyutlar</strong>Yükseklik: 15 cm, Genişlik: 20 cm  Derinlik:
-                    5 cm (Değerler örnektir)<br> <strong>Askı:</strong> 110 cm uzunluğunda
-                    çıkarılabilir omuz zinciri <br> <strong>Üretim:</strong>  %100 El Emeği, Türkiye'de
+                    <strong>Malzeme:</strong> Yüksek Kaliteli Parlak İnci, Altın
+                    Kaplama Metal Aksam <br />
+                    <strong>Boyutlar</strong>Yükseklik: 15 cm, Genişlik: 20 cm
+                    Derinlik: 5 cm (Değerler örnektir)<br />
+                    <strong>Askı:</strong> 110 cm uzunluğunda çıkarılabilir omuz
+                    zinciri <br />
+                    <strong>Üretim:</strong> %100 El Emeği, Türkiye'de
                     üretilmiştir.
                   </div>
                 </div>
@@ -209,7 +222,12 @@
                   data-bs-parent="#accordionFlushExample"
                 >
                   <div class="accordion-body">
-                    Siparişiniz, tamamen el emeğiyle hazırlandığı için 1-3 iş günü içerisinde özenle paketlenerek kargoya verilir. <br> Anlaşmalı olduğumuz kargo firması ile gönderim sağlanmakta olup, teslimat süresi Türkiye içi adreslere ortalama 2-5 iş günüdür. <br> 1500 TL ve üzeri tüm alışverişlerinizde kargo ücretsizdir.
+                    Siparişiniz, tamamen el emeğiyle hazırlandığı için 1-3 iş
+                    günü içerisinde özenle paketlenerek kargoya verilir. <br />
+                    Anlaşmalı olduğumuz kargo firması ile gönderim sağlanmakta
+                    olup, teslimat süresi Türkiye içi adreslere ortalama 2-5 iş
+                    günüdür. <br />
+                    1500 TL ve üzeri tüm alışverişlerinizde kargo ücretsizdir.
                   </div>
                 </div>
               </div>
@@ -232,8 +250,14 @@
                   data-bs-parent="#accordionFlushExample"
                 >
                   <div class="accordion-body">
-                    Ürününüzü teslim aldığınız tarihten itibaren 14 gün içerisinde iade edebilir veya değiştirebilirsiniz. <br> İade ve değişim işlemlerinde ürünün kullanılmamış, zarar görmemiş ve orijinal ambalajında olması gerekmektedir. <br> İşlemi başlatmak için lütfen 
-                    <strong>info@mirabag.com</strong> adresine sipariş numaranızla birlikte bir e-posta gönderiniz.
+                    Ürününüzü teslim aldığınız tarihten itibaren 14 gün
+                    içerisinde iade edebilir veya değiştirebilirsiniz. <br />
+                    İade ve değişim işlemlerinde ürünün kullanılmamış, zarar
+                    görmemiş ve orijinal ambalajında olması gerekmektedir.
+                    <br />
+                    İşlemi başlatmak için lütfen
+                    <strong>info@mirabag.com</strong> adresine sipariş
+                    numaranızla birlikte bir e-posta gönderiniz.
                   </div>
                 </div>
               </div>
@@ -251,16 +275,16 @@
         <div class="row">
           <div class="col-md-4">
             <h3 class="fw-bold fs-3">Kategoriler</h3>
-            <a href="#"> İnci Çantalar</a><br />
-            <a href="#"> Kristal Boncuk Çantalar</a><br />
-            <a href="#">Çanta Malzemeleri</a>
+            <a href="bilgilendirme.html"> İnci Çantalar</a><br />
+            <a href="bilgilendirme.html"> Kristal Boncuk Çantalar</a><br />
+            <a href="bilgilendirme.html">Çanta Malzemeleri</a>
           </div>
           <div class="col-md-4">
             <h3 class="fw-bold fs-3">Önemli Bilgiler</h3>
-            <a href="#">Kargo ve Teslimat</a><br />
-            <a href="#">İade ve Değişim</a><br />
-            <a href="#">Satış Sözleşmesi</a><br />
-            <a href="#">Gizlilik ve Güvenlik politakası</a>
+            <a href="bilgilendirme.html">Kargo ve Teslimat</a><br />
+            <a href="bilgilendirme.html">İade ve Değişim</a><br />
+            <a href="bilgilendirme.html">Satış Sözleşmesi</a><br />
+            <a href="bilgilendirme.html">Gizlilik ve Güvenlik politakası</a>
           </div>
           <div class="col-md-4">
             <h3 class="fw-bold fs-3">Hızlı Erişim</h3>
@@ -272,6 +296,7 @@
       </div>
     </footer>
     <!-- Footer - End -->
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
