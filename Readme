@@ -1,0 +1,72 @@
+// *****  MiraBag - El Emeği Çanta E-Ticaret Sitesi Front-End Projesi ***** // 
+
+Bu proje, "MiraBag" adında hayali bir marka için geliştirilmiş, modern ve tamamen duyarlı (responsive) bir e-ticaret sitesinin front-end prototipidir. Proje, HTML5, CSS3, Bootstrap 5 ve temel JavaScript DOM manipülasyonu yeteneklerini sergilemek amacıyla oluşturulmuştur.
+
+Site, lüks, el emeği inci ve kristal çanta satışı yapan bir markanın zarif ve minimalist kimliğini yansıtmaktadır.
+
+✨ Öne Çıkan Özellikler
+Modern Açılış Ekranı: Ana sayfada kullanıcıyı, sayfa yüklendiğinde JavaScript ile tetiklenen şık bir "Hoş Geldiniz" penceresi (Bootstrap Modal) karşılar.
+
+Zarif Animasyonlar:
+
+Ana sayfa metinleri, sayfa yüklendiğinde CSS ve JavaScript kullanılarak yumuşak bir "fade-in & slide-up" efektiyle belirir. (Üzeinde Çalışılıyor)
+
+Ürün detay sayfasındaki ana resmin üzerine gelindiğinde, sadece CSS transform: scale() kullanılarak oluşturulmuş temiz bir büyütme (zoom) efekti çalışır. 
+(Üzerinde Çalışılıyor Yakında güncellemele yapılacaktır)
+
+İnteraktif Ürün Galerisi:
+ Ürün detay sayfasında, küçük resimlere tıklandığında ana resim, JavaScript addEventListener ve DOM manipülasyonu ile dinamik olarak değişir. 
+(Üzerinde Çalışılıyor )
+
+Tamamen Duyarlı (Responsive) Tasarım: 
+Bootstrap 5 grid sistemi (col-sm, col-md, col-lg) ve flexbox kullanılarak, site tüm ekran boyutlarında (mobil, tablet, masaüstü) kusursuz bir şekilde görüntülenir.(Düzenleme Gelecek)
+
+Dinamik Bileşenler: 
+Ürün detay sayfasındaki "Detaylı Bilgiler" bölümü, Bootstrap'in Accordion bileşeni kullanılarak tıkla-aç/kapat şeklinde interaktif hale getirilmiştir.
+
+Profesyonel Form Yapısı: İletişim sayfasında, label, required gibi doğru HTML5 etiketleri ve özellikleri kullanılarak erişilebilir ve kullanıcı dostu bir form oluşturulmuştur.
+
+Harici Kütüphane Entegrasyonu: Font Awesome kütüphanesi, CDN aracılığıyla projeye dahil edilerek sosyal medya ikonları kullanılmıştır.
+
+
+Kullanılan Teknolojiler
+HTML5: Semantik etiketler (<main>, <footer>, <nav>) kullanılarak yapılandırılmıştır.
+
+CSS3: Projeye özel tasarımsal dokunuşlar, animasyonlar ve Flexbox hizalamaları için kullanılmıştır.
+
+JavaScript (ES6+): DOM Manipülasyonu, Olay Dinleyicileri (addEventListener), Koşullu çalıştırma (if blokları ile sayfa kontrolü), Modern söz dizimi (let, const)
+
+Bootstrap 5: Grid Sistemi (Row, Col), Bileşenler (Modal, Accordion, Navbar),
+Yardımcı Class'lar (Spacing, Flex, Borders vb.)
+
+Font Awesome: Sosyal medya ve diğer ikonlar için.
+
+Google Fonts: Marka kimliğine uygun Cinzel ve Poppins fontları için.
+
+🚀 Projenin Amacı ve Öğrenimler
+Bu proje, front-end geliştirme sürecinin temel taşlarını uygulamalı olarak deneyimlemek için yapılmıştır.
+Amaç; bir fikrin sıfırdan başlanarak çalışan, estetik ve profesyonel bir web sitesine nasıl dönüştürülebileceğini göstermekti.
+Proje boyunca:
+ Tarayıcı geliştirici araçlarıyla hata ayıklama (debugging)
+ UI/UX tutarlılığına dikkat etme
+ Responsive tasarım ve grid yapısı pratikleri yapılmıştır.
+
+kurulum (Setup)
+Projeyi bilgisayarınıza klonladıktan sonra:
+herhangi bir kurulum yapmanıza gerek yoktur. Sadece index.html dosyasını tarayıcınızda açmanız yeterlidir.
+
+İletişim 
+hanifealay@icloud.com
+Linkedin: linkedin.com/in/hanife-alay
+
+
+
+
+
+
+
+
+
+
+
+

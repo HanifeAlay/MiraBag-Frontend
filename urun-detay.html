@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MiraBAg</title>
+
+    <!-- bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css Link -->
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <!-- NavBar - Start -->
+    <nav class="navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand mx-auto" href="index.html"
+          >MiraBag - Zehra Apak</a
+        >
+        <form class="d-flex d-none d-lg-flex me-3" role="search">
+          <div class="input-group">
+            <span class="input-group-text bg-transparent border-end-0">
+              <i class="fas fa-search text-dark"></i>
+            </span>
+
+            <input
+              class="form-control border-start-0 navbar-search-input"
+              type="search"
+              placeholder="Ürün Ara..."
+              aria-label="Ara"
+            />
+          </div>
+        </form>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MiraBag</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Ana Sayfa</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="urunlerimiz.html">Tüm Ürünler</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sepet.html">Sepet</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Kategoriler
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Yeni Gelenler</a></li>
+                  <li><a class="dropdown-item" href="#">Çantalarımız</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Çanta Malzemeleri</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- NavBar - End -->
+    <!-- ürün kısmı -->
+    <main>
+      <div class="container my-5">
+        <div class="row text-center">
+          <div class="col-md-7">
+            <div class="row align-items-start">
+              <div class="col-md-3">
+                <img src="photo/inci cantalar/Gelin-inci2.png" 
+                     class="img-fluid rounded border mb-3 urun-galerisi-kucuk-resim"
+                     alt="Thumbnail 1">
+                <img src="photo/inci cantalar/gelin-inci3.png" 
+                     class="img-fluid rounded border mb-3 urun-galerisi-kucuk-resim"
+                     alt="Thumbnail 2">
+                     <img src="photo/inci cantalar/gelin-inci1.png" 
+                     class="img-fluid rounded border mb-3 urun-galerisi-kucuk-resim"
+                     alt="Thumbnail 3">
+              </div>
+              <div class="col-md-9">
+                <div id="buyuk-resim-alani" class="zoom" style="width: 100%;">
+                  <img src="photo/inci cantalar/gelin-inci1.png"
+                    class="img-fluid rounded border mb-3"
+                    alt="buyukFoto">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <h3><strong>İnci Gelin Çanta</strong></h3>
+            <p>
+              En mutlu gününüzde, hayalleriniz kadar saf ve ışıltılı bir
+              dokunuş... Bu zarif inci çanta, sadece bir aksesuar değil,
+              unutulmaz anılarınızın en şık tanığı olmak için tasarlandı. Her
+              bir incinin özenle işlendiği bu el emeği tasarım, romantik
+              zarafetinizi tamamlayacak.
+            </p>
+            <h2><strong>Fiyat : 4000₺</strong></h2>
+            <label for="ürünAdedi" class="form-label">Ürün Adedi</label>
+            <input
+              type="number"
+              value="1"
+              class="form-control"
+              id="ürünAdedi"
+              required
+            />
+            <a href="#" class="btn btn-primary  my-3">Sepete Ekle</a>
+          </div>
+        </div>
+        <!-- accordion -->
+        <div class="row mt-5">
+          <div class="col-md-12">
+            <h3><strong>Detaylı Bilgiler</strong></h3>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne"
+                  >
+                    Özellikler
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    <strong>Malzeme:</strong> Yüksek Kaliteli Parlak İnci, Altın Kaplama Metal
+                    Aksam  <br> <strong>Boyutlar</strong>Yükseklik: 15 cm, Genişlik: 20 cm  Derinlik:
+                    5 cm (Değerler örnektir)<br> <strong>Askı:</strong> 110 cm uzunluğunda
+                    çıkarılabilir omuz zinciri <br> <strong>Üretim:</strong>  %100 El Emeği, Türkiye'de
+                    üretilmiştir.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo"
+                  >
+                    Kargo & Teslimat
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Siparişiniz, tamamen el emeğiyle hazırlandığı için 1-3 iş günü içerisinde özenle paketlenerek kargoya verilir. <br> Anlaşmalı olduğumuz kargo firması ile gönderim sağlanmakta olup, teslimat süresi Türkiye içi adreslere ortalama 2-5 iş günüdür. <br> 1500 TL ve üzeri tüm alışverişlerinizde kargo ücretsizdir.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree"
+                  >
+                    İade & Değişim
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Ürününüzü teslim aldığınız tarihten itibaren 14 gün içerisinde iade edebilir veya değiştirebilirsiniz. <br> İade ve değişim işlemlerinde ürünün kullanılmamış, zarar görmemiş ve orijinal ambalajında olması gerekmektedir. <br> İşlemi başlatmak için lütfen 
+                    <strong>info@mirabag.com</strong> adresine sipariş numaranızla birlikte bir e-posta gönderiniz.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <hr />
+
+    <!-- Footer - Start -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h3 class="fw-bold fs-3">Kategoriler</h3>
+            <a href="#"> İnci Çantalar</a><br />
+            <a href="#"> Kristal Boncuk Çantalar</a><br />
+            <a href="#">Çanta Malzemeleri</a>
+          </div>
+          <div class="col-md-4">
+            <h3 class="fw-bold fs-3">Önemli Bilgiler</h3>
+            <a href="#">Kargo ve Teslimat</a><br />
+            <a href="#">İade ve Değişim</a><br />
+            <a href="#">Satış Sözleşmesi</a><br />
+            <a href="#">Gizlilik ve Güvenlik politakası</a>
+          </div>
+          <div class="col-md-4">
+            <h3 class="fw-bold fs-3">Hızlı Erişim</h3>
+            <a href="sepet.html">Sepetim</a><br />
+            <a href="iletisim.html">İletişim</a><br />
+            <a href="Hakkımızda.html">Hakkımızda</a><br />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer - End -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    
+    <script src="main.js"></script>
+  </body>
+</html>

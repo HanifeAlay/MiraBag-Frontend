@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MiraBAg</title>
+
+    <!-- bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css Link -->
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <!-- NavBar - Start -->
+    <nav class="navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand mx-auto" href="index.html"
+          >MiraBag - Zehra Apak</a
+        >
+        <form class="d-flex d-none d-lg-flex me-3" role="search">
+          <div class="input-group">
+            <span class="input-group-text bg-transparent border-end-0">
+              <i class="fas fa-search text-dark"></i>
+            </span>
+
+            <input
+              class="form-control border-start-0 navbar-search-input"
+              type="search"
+              placeholder="Ürün Ara..."
+              aria-label="Ara"
+            />
+          </div>
+        </form>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MiraBag</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Ana Sayfa</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="urunlerimiz.html">Tüm Ürünler</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sepet.html">Sepet</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Kategoriler
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Yeni Gelenler</a></li>
+                  <li><a class="dropdown-item" href="#">Çantalarımız</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Çanta Malzemeleri</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- NavBar - End -->
+    <hr />
+    <!-- Carusel - Start -->
+    <main>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-12 metin-colon my-5">
+            <h2><b>Hakkımızda</b></h2>
+            <br />
+          </div>
+        </div>
+      </div>
+      <!-- Carusel - End -->
+
+      <div class="container my-5">
+        <div class="row text-center ">
+          <div class="col-md-6">
+            <img src="photo/hakkımızda-foto.jpg" alt="profil" class="hakkimizda">
+          </div>
+        
+          <div class="col-md-6">
+            <h3><strong>Bir Tutkunun Işıltılı Hikayesi</strong></h3>
+            <p>
+              MiraBag, zarafetin el emeğiyle buluştuğu bir hayalden doğdu. Her
+              şey, bir boncuğun diğerine sabırla eklenmesiyle başlayan, ışıltılı
+              bir tutkunun peşinden gitme cesaretiyle şekillendi. Bizim için
+              gerçek lüks, bir logodan ibaret değil; biricik olanda, bir
+              hikayesi olanda ve dokunulduğunda hissedilen emekte gizlidir.
+              Atölyemize giren her bir inci, her bir kristal, bir potansiyel
+              taşır. Onları bir araya getiren her bir ilmek, saatler süren
+              sabrın ve adanmışlığın bir ifadesidir. Bu yüzden hiçbir MiraBag,
+              bir diğerinin aynısı değildir; her biri, sahibine özel bir sanat
+              eseridir.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer - Start -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h3 class="fw-bold fs-3">Kategoriler</h3>
+            <a href="#"> İnci Çantalar</a><br />
+            <a href="#"> Kristal Boncuk Çantalar</a><br />
+            <a href="#">Çanta Malzemeleri</a>
+          </div>
+          <div class="col-md-4">
+            <h3 class="fw-bold fs-3">Önemli Bilgiler</h3>
+            <a href="#">Kargo ve Teslimat</a><br />
+            <a href="#">İade ve Değişim</a><br />
+            <a href="#">Satış Sözleşmesi</a><br />
+            <a href="#">Gizlilik ve Güvenlik politakası</a>
+          </div>
+          <div class="col-md-4">
+            <h3 class="fw-bold fs-3">Hızlı Erişim</h3>
+            <a href="sepet.html">Sepetim</a><br />
+            <a href="iletisim.html">İletişim</a><br />
+            <a href="Hakkımızda.html">Hakkımızda</a><br />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer - End -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>

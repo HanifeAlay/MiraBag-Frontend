@@ -1,0 +1,277 @@
+/* Body - tüm sayfa düzenlemleri */
+html body {
+    padding-top: 90px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+/* Navbar Düzenlemeleri */
+.navbar {
+    height: 110px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+}
+.navbar-brand {
+    font-family: 'Cinzel', serif;
+    font-size: 60px;
+    color: #452c63;
+}
+.navbar :hover {
+    color: #5D76A9;
+}
+.offcanvas-body .nav-item .nav-link{
+    color: #452c63;
+    font-family: 'Cinzel', serif;
+    font-size: 1.1rem;
+}
+.offcanvas-body .nav-item .nav-link:hover,
+.offcanvas-body .nav-item .nav-link.active {
+  color: #5D76A9; 
+}
+.offcanvas-header .offcanvas-title {
+  font-family: "Cinzel", serif; 
+  color: #452c63; 
+  font-weight: 700; 
+  font-size: 2.2rem;
+}
+.from-control {
+    width: 250px;
+}
+.dropdown-menu{
+    font-family: "Cinzel", serif;
+    color: #452c63;
+}
+/* Buton ve Card Düzenlemelri */
+.btn-primary {
+    background-image: linear-gradient(to right, #9D50BB 0%, #6E48AA 51%, #9D50BB 100%)
+}
+
+.btn-primary {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-primary:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+.card {
+    border: 5px solid white;
+    border-radius: 5%;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0. 3);
+    
+    height: 550px;   /* Yükseklik */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    color: #452c63;
+    font-family: 'Cinzel', serif;
+
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Kartı 10 piksel yukarı kaydırır */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Daha belirgin bir gölge verir */
+}
+
+/* Karusel Düzenlemleri */
+.custom-img {
+    border-radius: 5%;
+    
+}
+.gorsel-hover {
+    width: 600px;
+    border-radius: 10%;  /* kenarları yuvarlak yapar*/
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.gorsel-hover:hover{
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0. 3);
+    z-index: 3;
+}
+.gorsel-link-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    pointer-events: none;
+}
+.hover-kapsayici {
+    position: relative;
+    overflow: visible;
+    display: inline-block;
+}
+
+/* Yazı Efektleri */
+h2 {
+    /* Eski gradyan kodunu bununla değiştir */
+    background-image: linear-gradient(
+        45deg,          /* Gradyanın açısı */
+        #35214c,        /* Marka Renginin Biraz Daha Koyusu (Derinlik) */
+        #452c63,        /* Markanın Ana Rengi */
+        #795ca3,        /* Marka Renginin Daha Açık/Canlı Tonu (Parlaklık) */
+        #9c82c6,        /* En Açık Ton (Işıltı Vurgusu) */
+        #452c63         /* Marka Rengi (Bitiş) */
+    );
+    
+    
+    /* 2. Gradyanın Sadece Metin Sınırları İçinde Görünmesini Sağla */
+    -webkit-background-clip: text; /* Tarayıcı uyumluluğu için önek */
+    background-clip: text; 
+    
+    /* 3. Metin Rengini Şeffaf Yap ki, alttaki gradyan görünsün */
+    color: transparent; 
+    
+    /* 4. Yazının ekranda belirgin olması için kalınlığını artırabilirsin */
+     font-size: 60px;
+     background-size: 200% auto;
+     /* Animasyonu uygula: isiltiHareket adında, 2 saniyede, doğrusal, sürekli tekrarla */
+    animation: isiltiHareket 5s linear infinite;
+    font-family: 'Cinzel', serif; 
+    font-weight: 340;
+}
+/* 1. Işıltı Animasyonu İçin @keyframes Tanımla */
+@keyframes isiltiHareket {
+    /* Başlangıç: Işıltı, metnin tamamen solunda gizli */
+    0% {
+        background-position: -200% 0; /* Negatif değerle sola gizliyoruz */
+    }
+    /* Bitiş: Işıltı, metnin sağından dışarı çıktı */
+    100% {
+        background-position: 200% 0; /* Pozitif değerle sağa taşıyoruz */
+    }
+}
+h3 {
+    /* Eski gradyan kodunu bununla değiştir */
+    background-image: linear-gradient(
+        45deg,          /* Gradyanın açısı */
+        #35214c,        /* Marka Renginin Biraz Daha Koyusu (Derinlik) */
+        #452c63,        /* Markanın Ana Rengi */
+        #795ca3,        /* Marka Renginin Daha Açık/Canlı Tonu (Parlaklık) */
+        #9c82c6,        /* En Açık Ton (Işıltı Vurgusu) */
+        #452c63         /* Marka Rengi (Bitiş) */
+    );
+    color: transparent; 
+    background-clip: text; 
+    font-size: 50px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 200% auto;
+    animation: isiltiHareket 5s linear infinite;
+    font-family: 'Cinzel', serif; 
+    font-weight: 300;
+}
+/* Footer Düzenlemelri */
+.footer {
+    color: #1d1160;
+    padding: 30px 0;
+    font-family: 'Cinzel', serif; 
+    font-weight: 700;
+}
+.footer a {
+    color: #452c63;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease; 
+    margin-bottom: 8px;
+    font-family: 'Cinzel', serif; 
+    font-weight: 500;
+}
+.footer a:hover {
+    /* Üzerine gelince metin rengini inci veya gümüş tonlarına getir */
+    color: #E1EBEE; 
+}
+
+/* İletişim Sayfası Düzenlemeleri */
+.iletisim {
+    color: #452c63;
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+}
+.iletisim a {
+    color: #452c63;
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+}
+
+/* Hakkımızda sayfası Düzenlemeleri */
+p {
+    color: #452c63;
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+}
+.hakkimizda {
+    border-radius: 5%;
+    width: 550px;
+}
+/* Ürün Detay Sayfası Düzelemeleri */
+.urun-detay-buyuk {
+     width: 300px;
+     border-radius: 10%;
+}
+.urun-detay-img {
+    width: 150px;
+    border-radius: 10%;
+    border: #1d1160;
+}
+li {
+  color: #452c63;
+  font-family: 'Cinzel', serif;
+}
+/* sepet sayfası düzenlemeleri */
+.btn-kaldir {
+  min-width: 220px;
+  display: inline-block;
+}
+.urun-bilgi {
+    width: 360px;
+    margin: 0 auto;
+}
+
+.adet {
+    width: 120px;
+    margin: 0 auto 5rem;
+}
+
+/* JavaScript stilleri - ana sayfa  */
+.modal-title {
+    color: #452c63;
+    font-family: 'Cinzel', serif;
+    font-size: 30;
+}
+
+/* Ürün Detayı Sayfası Düzenlemeleri */
+.zoom {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: crosshair;
+}
+.zoom img{
+    width: 100%;
+    display: block;
+    pointer-events: none;
+    user-select: none;
+}
+.zoom.active img{
+    opacity: 0;
+}
+
