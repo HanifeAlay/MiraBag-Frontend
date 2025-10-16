@@ -9,15 +9,12 @@ Modern Açılış Ekranı: Ana sayfada kullanıcıyı, sayfa yüklendiğinde Jav
 
 Zarif Animasyonlar:
 
-Ürün detay sayfasındaki ana resmin üzerine gelindiğinde, sadece CSS transform: scale() kullanılarak oluşturulmuş temiz bir büyütme (zoom) efekti çalışır. 
-(Üzerinde Çalışılıyor Yakında güncellemele yapılacaktır)
-
 İnteraktif Ürün Galerisi:
  Ürün detay sayfasında, küçük resimlere tıklandığında ana resim, JavaScript addEventListener ve DOM manipülasyonu ile dinamik olarak değişir. 
 
 
 Tamamen Duyarlı (Responsive) Tasarım: 
-Bootstrap 5 grid sistemi (col-sm, col-md, col-lg) ve flexbox kullanılarak, site tüm ekran boyutlarında (mobil, tablet, masaüstü) kusursuz bir şekilde görüntülenir.(Düzenleme Gelecek)
+Bootstrap 5 grid sistemi (col-sm, col-md, col-lg) ve flexbox kullanılarak, site tüm ekran boyutlarında (mobil, tablet, masaüstü) kusursuz bir şekilde görüntülenir.(Düzenleme Devam ediyor)
 
 Dinamik Bileşenler: 
 Ürün detay sayfasındaki "Detaylı Bilgiler" bölümü, Bootstrap'in Accordion bileşeni kullanılarak tıkla-aç/kapat şeklinde interaktif hale getirilmiştir.
@@ -52,6 +49,9 @@ Proje boyunca:
 kurulum (Setup)
 Projeyi bilgisayarınıza klonladıktan sonra:
 herhangi bir kurulum yapmanıza gerek yoktur. Sadece index.html dosyasını tarayıcınızda açmanız yeterlidir.
+
+Yardım alınan yerler : 
+ChatGbt ve Gemini gibi yapayzeka araçlarından yardım alınmıştır. (ÖRN; Tüm fotoğraflar telif hakkı olmaması açısından gemini ile oluşturulmuştur)
 
 İletişim 
 hanifealay@icloud.com

@@ -91,7 +91,7 @@ html body {
     
 }
 .gorsel-hover {
-    width: 600px;
+    width: 100%;
     border-radius: 10%;  /* kenarları yuvarlak yapar*/
     height: auto;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -114,24 +114,23 @@ html body {
 .hover-kapsayici {
     position: relative;
     overflow: visible;
-    display: inline-block;
 }
 
 /* Yazı Efektleri */
 h2 {
-    /* Eski gradyan kodunu bununla değiştir */
+    
     background-image: linear-gradient(
         45deg,          /* Gradyanın açısı */
-        #35214c,        /* Marka Renginin Biraz Daha Koyusu (Derinlik) */
-        #452c63,        /* Markanın Ana Rengi */
-        #795ca3,        /* Marka Renginin Daha Açık/Canlı Tonu (Parlaklık) */
-        #9c82c6,        /* En Açık Ton (Işıltı Vurgusu) */
-        #452c63         /* Marka Rengi (Bitiş) */
+        #35214c,       
+        #452c63,      
+        #795ca3,       
+        #9c82c6,     
+        #452c63        
     );
     
     
     /* 2. Gradyanın Sadece Metin Sınırları İçinde Görünmesini Sağla */
-    -webkit-background-clip: text; /* Tarayıcı uyumluluğu için önek */
+    -webkit-background-clip: text;
     background-clip: text; 
     
     /* 3. Metin Rengini Şeffaf Yap ki, alttaki gradyan görünsün */
@@ -157,14 +156,14 @@ h2 {
     }
 }
 h3 {
-    /* Eski gradyan kodunu bununla değiştir */
+    
     background-image: linear-gradient(
-        45deg,          /* Gradyanın açısı */
-        #35214c,        /* Marka Renginin Biraz Daha Koyusu (Derinlik) */
-        #452c63,        /* Markanın Ana Rengi */
-        #795ca3,        /* Marka Renginin Daha Açık/Canlı Tonu (Parlaklık) */
-        #9c82c6,        /* En Açık Ton (Işıltı Vurgusu) */
-        #452c63         /* Marka Rengi (Bitiş) */
+        45deg,         
+        #35214c,        
+        #452c63,        
+        #795ca3,        
+        #9c82c6,       
+        #452c63        
     );
     color: transparent; 
     background-clip: text; 
